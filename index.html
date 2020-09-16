@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="./asset/CSS/style.css">
-    </head>
-    <body>
-        <h1 class="jumbotron">Hiya! Our Bootstrap works.</h1>
-        
-        <script src="./asset/JavaScript/index.js"></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./asset/CSS/style.css" />
+  </head>
+  <body>
+    <h1 class="jumbotron">Hiya! Our Bootstrap works.</h1>
+    
+<!-- create container holding gym locations, market locations, map, and motivational quotes -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <section id="gym-locations">
+            This is where we will host the local gym spots
+          </section>
+          <section id="market-locations">
+            This is where we will host local markets in the area.
+          </section>
+        </div>
+
+        <div class="col-md-8">
+          <section id="map">This is where our map will be hosted</section>
+        </div>
+
+        <div class="col-md-2">
+          <aside id="motivational-quotes">
+            This is where our motivational quotes will be hosted
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <script src="./asset/JavaScript/index.js"></script>
+  </body>
 </html>
