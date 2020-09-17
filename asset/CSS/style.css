@@ -16,11 +16,30 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("https://images.unsplash.com/photo-1524002232583-bbe9d9d2eebd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1951&q=80");
-    font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .footer {
-    padding: 30px;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+#statement-img {
+  width: 200px;
+  height: 200px;
+}
+
+
+.mb-3{
+  max-width: 700px;
+}
+
+#user-input-section{ 
+  float:right
 }
