@@ -6,3 +6,7 @@
 body{
     background-color: lightblue;
 }
+
+.jumbotron {
+    font-family: 'Oswald', sans-serif;
+}
