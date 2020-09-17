@@ -43,3 +43,10 @@ body {
 #user-input-section{ 
   float:right
 }
+
+
+
+
+.hide {
+  display: none;
+}
