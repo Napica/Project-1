@@ -18,8 +18,8 @@ submitBtn.addEventListener("click", function(event) {
         var author = response.quoteAuthor;
         var quoteDiv = $("<div>").text(quote);
         var authorDiv = $("<div>").text(author);
-        $("#company-section").append(quoteDiv);
-        $("#company-section").append(authorDiv);
+        $("#random-generator").append(quoteDiv);
+        $("#random-generator").append(authorDiv);
         
       });
 });
