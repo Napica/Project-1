@@ -43,6 +43,9 @@ $(document).ready(function () {
     event.preventDefault();
     firstContainer.addClass("hide");
     secondContainer.removeClass("hide");
+    var userInput = $("#areaCode").val();
+    console.log(userInput);
+
     $.ajax({
       url: "https://api.forismatic.com/api/1.0/",
       jsonp: "jsonp",
