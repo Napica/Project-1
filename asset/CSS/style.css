@@ -42,11 +42,20 @@ body {
 
 #user-input-section{ 
   float:right
+
 }
 #zip-card{
-  margin-right: 30px;
+  text-align: center;
 }
-
+.background{
+  background-color:rgb(231, 231, 231);
+}
 .hide {
   display: none;
+}
+.statement {
+  text-align:center;
+}
+#motto-text{
+  text-align:center;
 }
