@@ -1,28 +1,25 @@
 $(document).ready(function () {
   // Dom Variables
-  
-  var CORS = "https://cors-anywhere.herokuapp.com/";
+  // var CORS = "https://cors-anywhere.herokuapp.com/";
   var submitBtn = $("#input-btn");
   var firstContainer = $("#first-container");
   var secondContainer = $("#second-container");
-  
   // JS variables
-  
   // Functions
-
   // function to generate map
-  function mapGeneration() {
- 
-    function callLocation() {
-      var positionQueryURL =
-        "https://public.opendatasoft.com/api/records/1.0/search/?dataset=us-zip-code-latitude-and-longitude&q=&facet=state&facet=timezone&facet=dst";
+  function mapGeneration(userInput) {
+    function callLocation(userInput) {
+      console.log(userInput);
+      L.mapquest.key = "J4OCq4RHL0SJ5Gk2Nl3gAInDB8piwquG";
+      var positionQueryURL = `https://www.mapquestapi.com/geocoding/v1/address?key=J4OCq4RHL0SJ5Gk2Nl3gAInDB8piwquG&inFormat=kvp&outFormat=json&location=${userInput}&thumbMaps=false`
       $.ajax({
         url: positionQueryURL,
         method: "GET",
       }).then(function (success) {
-        var geoLatitude = success.records[0].fields.latitude;
-        var geoLongitude = success.records[0].fields.longitude;
-    
+        console.log(success)
+        var geoLatitude = success.results[0].locations[0].latLng.lat
+        var geoLongitude = success.results[0].locations[0].latLng.lng
+        console.log(geoLatitude, geoLongitude)
         L.mapquest.key = "J4OCq4RHL0SJ5Gk2Nl3gAInDB8piwquG";
         callLocation();
         L.mapquest.map("map", {
@@ -32,20 +29,16 @@ $(document).ready(function () {
         });
       });
     }
-    callLocation();
+    callLocation(userInput);
   }
- 
   // Function Calls
-
   // Event Listeners
-
   submitBtn.on("click", function (event) {
     event.preventDefault();
     firstContainer.addClass("hide");
     secondContainer.removeClass("hide");
     var userInput = $("#areaCode").val();
     console.log(userInput);
-
     $.ajax({
       url: "https://api.forismatic.com/api/1.0/",
       jsonp: "jsonp",
@@ -62,8 +55,7 @@ $(document).ready(function () {
       var authorDiv = $("<div>").text(author);
       $("#random-generator").append(quoteDiv);
       $("#random-generator").append(authorDiv);
-
-      mapGeneration();
+      mapGeneration(userInput);
     });
   });
 });
