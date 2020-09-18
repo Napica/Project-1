@@ -8,28 +8,23 @@ $(document).ready(function () {
   // Functions
   // function to generate map
   function mapGeneration(userInput) {
-    function callLocation(userInput) {
       console.log(userInput);
       L.mapquest.key = "J4OCq4RHL0SJ5Gk2Nl3gAInDB8piwquG";
-      var positionQueryURL = `https://www.mapquestapi.com/geocoding/v1/address?key=J4OCq4RHL0SJ5Gk2Nl3gAInDB8piwquG&inFormat=kvp&outFormat=json&location=${userInput}&thumbMaps=false`
+      var positionQueryURL = `https://www.mapquestapi.com/geocoding/v1/address?key=FZoxJhWY2xMjvAB5kYeqPUCSU8eAs6hV&inFormat=kvp&outFormat=json&location=${userInput}&thumbMaps=false&maxMatches=5`
       $.ajax({
         url: positionQueryURL,
         method: "GET",
       }).then(function (success) {
-        console.log(success)
         var geoLatitude = success.results[0].locations[0].latLng.lat
         var geoLongitude = success.results[0].locations[0].latLng.lng
         console.log(geoLatitude, geoLongitude)
         L.mapquest.key = "J4OCq4RHL0SJ5Gk2Nl3gAInDB8piwquG";
-        callLocation();
         L.mapquest.map("map", {
           center: [geoLatitude, geoLongitude],
           layers: L.mapquest.tileLayer("map"),
           zoom: 12,
         });
-      });
-    }
-    callLocation(userInput);
+      }); 
   }
   // Function Calls
   // Event Listeners
