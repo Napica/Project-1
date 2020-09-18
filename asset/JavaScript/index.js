@@ -4,6 +4,7 @@ $(document).ready(function () {
   var submitBtn = $("#input-btn");
   var firstContainer = $("#first-container");
   var secondContainer = $("#second-container");
+  var homeBtn = $("#home");
   // JS variables
   // Functions
   // function to generate map
@@ -44,6 +45,7 @@ $(document).ready(function () {
         format: "jsonp",
       },
     }).then(function (response) {
+      $("#random-generator").empty();
       var quote = response.quoteText;
       var author = response.quoteAuthor;
       var quoteDiv = $("<div>").text(quote);
@@ -53,4 +55,9 @@ $(document).ready(function () {
       mapGeneration(userInput);
     });
   });
+  homeBtn.on("click", function(event){
+    event.preventDefault();
+    firstContainer.removeClass("hide");
+    secondContainer.addClass("hide");
+  })
 });
