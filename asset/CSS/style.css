@@ -43,9 +43,9 @@ body {
 #user-input-section{ 
   float:right
 }
-
-
-
+#zip-card{
+  margin-right: 30px;
+}
 
 .hide {
   display: none;
