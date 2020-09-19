@@ -10,12 +10,14 @@ body {
 }
 
 .jumbotron {
+  margin-bottom: 0px;
+  padding: 0px;
   font-family: "Oswald", sans-serif;
   color: lightgray;
   font-weight: bold;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://images.unsplash.com/photo-1524002232583-bbe9d9d2eebd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1951&q=80");
+  background-color: black;
   font-family: "Oswald", sans-serif;
 }
 
@@ -35,28 +37,72 @@ body {
   height: 200px;
 }
 
-.mb-3 {
-  max-width: 700px;
+.mb-3{
+  max-width: 600px;
 }
 
-#user-input-section {
-  float: right;
+#user-input-section{ 
+  float:right
 }
-#zip-card {
-  text-align: center;
+#zip-card{
+  margin-right: 30px;
 }
-.background {
-  background-color: rgb(221, 221, 221);
-}
+
 .hide {
   display: none;
 }
+#slider-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 100px;
+}
+
+.carousel-caption {
+  top: 60%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+@media( max-width: 800px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+.card-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+
 .statement {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
   text-align: center;
 }
-#motto-text {
-  text-align: center;
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
 }
-.map-size {
-  height: 75vh;
+
+.container{
+  background-color: lightgray;
 }
+
+/* .col-md-8{
+  width: 800px;
+    max-width: 80%;
+    border-radius: 5px;
+    /* padding: 75px; */
+    /* box-shadow: 0 0 10px 2px;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+.col-md-4{
+  float: right;
+} */ */
+
