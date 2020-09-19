@@ -41,11 +41,11 @@
               <div class="row no-gutters">
                 <div class="col-md-8">
                   <div class="card-body background">
-                    <br>
+                    <br />
                     <h3 class="card-text">All the places to get fit.</h3>
-                    <br>
-                    <br>
-                    <br>
+                    <br />
+                    <br />
+                    <br />
                     <h3 class="card-text">All the places to eat right.</h3>
                   </div>
                 </div>
@@ -60,8 +60,7 @@
             </div>
             <div class="card text-right col-md-6 background" id="zip-card">
               <div class="card-body background">
-                <h5 class="card-title">
-                  </h5>
+                <h5 class="card-title"></h5>
                 <h2 class="card-text">Input city and state.</h2>
                 <form>
                   <input
@@ -70,7 +69,9 @@
                     name="areaCode"
                     placeholder="Example: Atlanta, GA"
                   /><br />
-                  <button class="submit" id="input-btn">Submit</button>
+                  <br/>
+                  <button class="submit btn-lg" id="input-btn-gym">Find Gyms</button>
+                  <button class="submit btn-lg" id="input-btn-market">Find Markets</button>
                 </form>
               </div>
             </div>
@@ -78,7 +79,9 @@
           <div class="col-md-4">
             <aside class="card" style="width: 18rem" id="company-section">
               <div class="card-body background">
-                <section class="statement"><h3>Connecting you with what you need to stay fit.</h3></section>
+                <section class="statement">
+                  <h3>Connecting you with what you need to stay fit.</h3>
+                </section>
                 <section class="motto">
                   <p id="motto-text">
                     “As iron sharpens iron, so one person sharpens another.”
@@ -94,25 +97,14 @@
 
     <container>
       <div class="container hide" id="second-container">
+        <h1 class = "text-center">Iron Will</h1>
         <div class="row">
-          <div class="col-md-3">
-            <div class="card" style="width: 18rem">
-              <div class="card-body" id = "gymList">Gym locations will populate here
-                <button class="location-btn" id="gym-btn">Gyms near me</button>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem; margin-top: 20px">
-              <div class="card-body">Market Locations
-                <button class="location-btn" id="market-btn">Markets near me</button>
-              </div>
-            </div>
-            <button class="btn btn-dark" id="home">Home</button>
-          </div>
-          <div class="col-md-6" id="map">Map will be here</div>
-          <div class="col-md-6 hide" id="mapGym">Map will be  be here</div>
-          <div class="col-md-3" id="random-generator">
-            Random Generator will be here
-          </div>
+          <div class="col-md-12 text-center" id="random-generator"></div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-md-12 map-size" id="map">Map will be here</div>
+          <button class="btn btn-dark" id="home">Home</button>
         </div>
       </div>
     </container>

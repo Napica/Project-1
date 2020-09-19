@@ -35,27 +35,28 @@ body {
   height: 200px;
 }
 
-
-.mb-3{
+.mb-3 {
   max-width: 700px;
 }
 
-#user-input-section{ 
-  float:right
-
+#user-input-section {
+  float: right;
 }
-#zip-card{
+#zip-card {
   text-align: center;
 }
-.background{
-  background-color:rgb(221, 221, 221);
+.background {
+  background-color: rgb(221, 221, 221);
 }
 .hide {
   display: none;
 }
 .statement {
-  text-align:center;
+  text-align: center;
 }
-#motto-text{
-  text-align:center;
+#motto-text {
+  text-align: center;
+}
+.map-size {
+  height: 75vh;
 }
