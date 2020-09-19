@@ -88,6 +88,10 @@ p {
   background-color: lightgray;
 }
 
+
+.map-size {
+  height: 75vh;
+}
 /* .col-md-8{
   width: 800px;
     max-width: 80%;
