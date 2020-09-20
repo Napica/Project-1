@@ -37,14 +37,14 @@ body {
   height: 200px;
 }
 
-.mb-3{
+.mb-3 {
   max-width: 600px;
 }
 
-#user-input-section{ 
-  float:right
+#user-input-section {
+  float: right;
 }
-#zip-card{
+#zip-card {
   margin-right: 30px;
 }
 
@@ -62,7 +62,7 @@ body {
   text-transform: uppercase;
 }
 
-@media( max-width: 800px) {
+@media (max-width: 800px) {
   .carousel-caption {
     display: none;
   }
@@ -77,23 +77,30 @@ body {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   text-align: center;
-} 
+}
 
 p {
   font-family: "Oswald", sans-serif;
   font-size: 25px;
 }
 
-.container{
+.container {
   background-color: lightgray;
 }
-
 
 .map-size {
   height: 75vh;
 }
 
 #random-generator {
-  font-family: 'Spectral SC', serif;
+  font-family: "Spectral SC", serif;
   font-size: 30px;
+}
+
+.card {
+  background-color: rgb(221, 221, 221);
+  border: solid;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: rgb(201, 201, 201);
 }
