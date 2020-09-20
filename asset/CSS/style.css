@@ -92,21 +92,8 @@ p {
 .map-size {
   height: 75vh;
 }
-/* .col-md-8{
-  width: 800px;
-    max-width: 80%;
-    border-radius: 5px;
-    /* padding: 75px; */
-    /* box-shadow: 0 0 10px 2px;
+
+#random-generator {
+  font-family: 'Spectral SC', serif;
+  font-size: 30px;
 }
-
-.card-img {
-  width: 200px;
-  height: 200px;
-  float: right;
-}
-
-.col-md-4{
-  float: right;
-} */ */
-
