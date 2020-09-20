@@ -16,10 +16,9 @@ button will navigate back to the home page.
 
 ## Installation
 ---
-
 **To edit/use the application, please follow the steps to pull the repository from GitHub through Git Bash and pull the script into VSCode, provided all three items are already installed on a local network.**
 Installation steps are as follows:
-1. Access the repository at [Git Hub] https://napica.github.io/Project-1/. 
+1. Access the repository at [Git Hub] https://github.com/Napica/Project-1 . 
 2. Click on the code section (in green) and clone the SSH key.  
 3. Once the SSH key is cloned, open the terminal through Git Bash.
 4. Find or create the folder the user wants to work in and enter the following commands the the Git terminal:
@@ -27,30 +26,36 @@ Installation steps are as follows:
     2. git pull (*this will pull all the lines of script from the local repository.*)
     3. code . (*This will extract the code and link the paths to VSCode for review/editing/uploading)
 
-## License
----
+Please click on the link below to access the site directly:
 
-This project is open source, feel free to use as you see fit.
+1. https://napica.github.io/Project-1/
 
 ## Features
 ---
+
+![itemLinks](asset/images/HomePage2.png)
 *The home page, [https://napica.github.io/Project-1/](https://napica.github.io/Project-1/), will bring the user to the webpage in the image below.*
-
-![Toned Tribe](asset\images\HomePage2.png)
-
-*At the end of the carousel of pictures, a button can be found that will bring the user to the search bar further down on the page.*
 
 ![Toned Tribe](asset\images\HomePage3.png)
 
 *The user is then presented with two buttons, "Find Gyms" and "Find Markets". Upon entering their city and state into the search bar, the user simply selects which of gyms and markets they want to appear on the map.*
 
-![Toned Tribe](asset\images\HomePage4.png)
+![itemLinks](/asset/images/HomePage4.png)
+
+*At the end of the carousel of pictures, a button can be found that will bring the user to the search bar further down on the page.*
+
+![itemLinks](asset\images\MapPage.png)
 
 *The user is then brought to the map page, where an interactive map will be generated when the page loads. Above the map, an inspirational quote will generate to inspire wisdom and willpower to encourage them in their health and fitness journey.*
 
 *If the user wants to navigate back to the home page to search for the other choice, a home button can be found below the map.*
 
-![Toned Tribe](asset\images\MapPage.png)
+<br/>
+
+## License
+
+
+This project is open source, feel free to use as you see fit.
 
 ## Credits
 ---
