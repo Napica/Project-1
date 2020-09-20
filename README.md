@@ -36,7 +36,7 @@ Please click on the link below to access the site directly:
 ![itemLinks](asset/images/HomePage2.png)
 *The home page, [https://napica.github.io/Project-1/](https://napica.github.io/Project-1/), will bring the user to the webpage in the image below.*
 
-![Toned Tribe](asset\images\HomePage3.png)
+![Toned Tribe](asset/images/HomePage3.png)
 
 *The user is then presented with two buttons, "Find Gyms" and "Find Markets". Upon entering their city and state into the search bar, the user simply selects which of gyms and markets they want to appear on the map.*
 
@@ -44,7 +44,7 @@ Please click on the link below to access the site directly:
 
 *At the end of the carousel of pictures, a button can be found that will bring the user to the search bar further down on the page.*
 
-![itemLinks](asset\images\MapPage.png)
+![itemLinks](asset/images/MapPage.png)
 
 *The user is then brought to the map page, where an interactive map will be generated when the page loads. Above the map, an inspirational quote will generate to inspire wisdom and willpower to encourage them in their health and fitness journey.*
 
