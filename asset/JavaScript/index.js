@@ -97,6 +97,7 @@ $(document).ready(function () {
   // Event Listeners
   submitBtnGym.on("click", function (event) {
     event.preventDefault();
+    
     firstContainer.addClass("hide");
     secondContainer.removeClass("hide");
     var userInput = $("#areaCode").val();
@@ -149,9 +150,4 @@ $(document).ready(function () {
     });
   });
 
-  homeBtn.on("click", function (event) {
-    event.preventDefault();
-    firstContainer.removeClass("hide");
-    secondContainer.addClass("hide");
-  });
 });
